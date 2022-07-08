@@ -166,8 +166,8 @@ class Formulario(Pessoa):
                     if nome_usuario_para_pesquisa in self.cadastrados[cliente].nome_de_usuario:
                         self.cadastrados[cliente].mostrar_dados()
                         return self.cadastrados[cliente]
-                    else:
-                        print("Cliente não encontrado, tente outro nome de usuario.")
+                else:
+                    print("Cliente não encontrado, tente outro nome de usuario.")
                         
                 continuar = self.pergunta_se_vai_continuar("Deseja procurar por outro nome de usuario?  [1] - sim  [2] - não")
             else:
